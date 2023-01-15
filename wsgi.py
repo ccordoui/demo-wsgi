@@ -2,8 +2,8 @@ from time import time
 from flask import Flask
 from flask_restx import Resource, Api, reqparse
 
-app = Flask(__name__)
-api = Api(app)
+application = Flask(__name__)
+api = Api(application)
 
 
 parser = reqparse.RequestParser()
@@ -32,4 +32,4 @@ class Time(Resource):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
