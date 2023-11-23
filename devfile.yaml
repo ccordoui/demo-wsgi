@@ -21,7 +21,7 @@ components:
   - name: py
     container:
       image: registry.access.redhat.com/ubi9/python-39:1-153
-      args: ['tail', '-f', '/dev/null']
+      args: ['sleep', '1d']
       mountSources: true
       endpoints:
         - name: http-python
