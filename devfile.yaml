@@ -12,6 +12,7 @@ metadata:
 components:
   - name: dev-tooling
     container:
+      args: ["tail", "-f", "/dev/null"]
       image: quay.io/devfile/universal-developer-image:ubi8-latest
       endpoints:
         - name: http-3000
