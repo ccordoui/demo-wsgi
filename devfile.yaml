@@ -20,7 +20,7 @@ components:
           targetPort: 3000
   - name: rhsi
     container:
-      image: registry.redhat.io/service-interconnect/skupper-router-rhel9@latest
+      image: registry.redhat.io/service-interconnect/skupper-router-rhel9:latest
 commands:
   - id: install
     exec:
