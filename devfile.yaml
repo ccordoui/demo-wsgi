@@ -12,7 +12,8 @@ metadata:
 components:
   - name: dev-tooling
     container:
-      args: ["tail", "-f", "/dev/null"]
+      command: ["/bin/sh"]
+      args: ["-c", "tail -f /dev/null"]
       image: registry.access.redhat.com/ubi9/python-39:1-153
       endpoints:
         - name: http-3000
